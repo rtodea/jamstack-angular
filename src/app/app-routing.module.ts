@@ -27,6 +27,7 @@ const routes: Routes = [
         (m) => m.FormSuccessModule
       ),
   },
+  { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
 ];
 
 @NgModule({
